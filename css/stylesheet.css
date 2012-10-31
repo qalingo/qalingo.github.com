@@ -1,0 +1,10 @@
+
+.masthead {
+    padding: 0 0 10px;
+}
+
+body > .navbar .brand {
+	float: left;
+	padding-right: 10px;
+	color: #7d7e80;
+}
