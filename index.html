@@ -12,6 +12,8 @@
 		<link href="js/library/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
 		<link href="js/library/bootstrap/css/docs.css" rel="stylesheet" type="text/css" />
 		<script src="js/library/bootstrap/js/bootstrap.min.js"></script>
+
+		<link href="js/library/bootswatch/bootswatch.css" rel="stylesheet" type="text/css" />
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -50,10 +52,10 @@
 					</div>
 					<ul id="main-menu-right" class="nav pull-right">
 						<li>
-							<a href="http://www.hoteia.com" alt="Hoteia.com" target="_blank">Hoteia.com <i class="icon-share-alt"></i></a>
+							<a href="http://www.hoteia.com" alt="Hoteia.com" target="_blank" rel="tooltip" data-original-title="More documentation about Hoteia">Hoteia.com <i class="icon-share-alt"></i></a>
 							</li>
 						<li>
-							<a href="http://blog.hoteia.com" alt="Blog Hoteia" target="_blank">Blog Hoteia <i class="icon-share-alt"></i></a>
+							<a href="http://blog.hoteia.com" alt="Blog Hoteia" target="_blank" rel="tooltip" data-original-title="More documentation about Qalingo">Blog Hoteia <i class="icon-share-alt"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -138,8 +140,13 @@
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/library/bootswatch/application.js"></script>
 		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
+		<script>
+			$('a[rel=tooltip]').tooltip({
+				'placement': 'bottom'
+			});
+		</script>
 		<!-- Analytics
 		================================================== -->
 		<script type="text/javascript">
