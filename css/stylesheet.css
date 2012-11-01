@@ -43,6 +43,9 @@ body > .navbar .brand {
 	opacity: 1;
 }
 
-
+.footer a:hover {
+	color: #990099;
+	text-decoration: none;
+}
 
 
