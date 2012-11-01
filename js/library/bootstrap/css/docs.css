@@ -289,8 +289,8 @@ hr.soften {
 -------------------------------------------------- */
 
 .footer {
-  padding: 70px 0;
-  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 50px;
   border-top: 1px solid #e5e5e5;
   background-color: #f5f5f5;
 }
