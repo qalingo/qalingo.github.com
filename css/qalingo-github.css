@@ -1,4 +1,23 @@
 
+/* disable bootstrap icon and use font-awesome */
+[class^="icon-"], [class*=" icon-"] {
+    vertical-align: middle;
+	background-image: none;
+    width: auto;
+}
+
+.google-follow {
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+    line-height: 0.4em;
+}
+
 .jumbotron {
     background: #020031;
 }
