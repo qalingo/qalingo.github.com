@@ -197,7 +197,7 @@ i.award-icon {
 /* Indiegogo */
 
 .indiegogo-row {
-  color: #ffffff;
+  color: #B7429A;
   display: table;
   height: 400px;
   width: 100%;
@@ -286,6 +286,7 @@ i.award-icon {
   height: 500px;
 }
 
+
 /* Footer */
 
 footer {
@@ -325,3 +326,5 @@ i.scroll:hover {
   }
 
 }
+
+
