@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Qalingo documentation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="boostrap/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="assets/css/bootswatch.min.css">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+			<script src="bower_components/respond/dest/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">Qalingo documentation</a>
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<!--
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+							<ul class="dropdown-menu" aria-labelledby="themes">
+								<li><a href="../default/">Default</a></li>
+								<li class="divider"></li>
+								<li><a href="../amelia/">Amelia</a></li>
+								<li><a href="../cerulean/">Cerulean</a></li>
+								<li><a href="../cosmo/">Cosmo</a></li>
+								<li><a href="../cyborg/">Cyborg</a></li>
+								<li><a href="../darkly/">Darkly</a></li>
+								<li><a href="../flatly/">Flatly</a></li>
+								<li><a href="../journal/">Journal</a></li>
+								<li><a href="../lumen/">Lumen</a></li>
+								<li><a href="../readable/">Readable</a></li>
+								<li><a href="../simplex/">Simplex</a></li>
+								<li><a href="../slate/">Slate</a></li>
+								<li><a href="../spacelab/">Spacelab</a></li>
+								<li><a href="../superhero/">Superhero</a></li>
+								<li><a href="../united/">United</a></li>
+								<li><a href="../yeti/">Yeti</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
+							<ul class="dropdown-menu" aria-labelledby="download">
+								<li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
+								<li><a href="./bootstrap.css">bootstrap.css</a></li>
+								<li class="divider"></li>
+								<li><a href="./variables.less">variables.less</a></li>
+								<li><a href="./bootswatch.less">bootswatch.less</a></li>
+							</ul>
+						</li>
+						-->
+						<li>
+						<a href="big-picture.html">Big picture</a>
+						</li>
+						<li>
+						<a href="install.html">Install</a>
+						</li>
+						<li>
+						<a href="api.html">API</a>
+						</li>
+						<li>
+						<a href="roadmap.html">Roadmap</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://demo.qalingo.com" target="_blank">Demo website</a></li>
+						<li><a href="http://challenge.qalingo.org" target="_blank">Challenge 2014 website</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		
+			<div class="bs-docs-section clearfix">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page-header">
+							<h2 id="page-header-title">Quick start</h2>
+						</div>
+						<div>
+							<div>
+								<p>Info : If you don't have your own dev env (IDE, Java, Maven, etc), check this part: <a href="#">install a default env with Eclipse</a></p>
+								<h3>Clone with your IDE or git the mandatory repositories and add the projets in your IDE.</h3>
+
+								<p>Clone with your IDE or git this repositories and add the projets in your IDE.</p>
+
+								<p>
+								<a href="https://github.com/qalingo/qalingo-engine" target="_blank">https://github.com/qalingo/qalingo-engine</a>
+								(All the Core, jars)
+								</p>
+								<p>
+								<a href="https://github.com/qalingo/qalingo-i18n" target="_blank">https://github.com/qalingo/qalingo-i18n</a>
+								(all the wording)
+								</p>
+								<p>
+								<a href="https://github.com/qalingo/qalingo-shared" target="_blank">https://github.com/qalingo/qalingo-shared</a>
+								(all the shared files like propeties)
+								</p>
+								<p>
+								<a href="https://github.com/qalingo/qalingo-assets" target="_blank">https://github.com/qalingo/qalingo-assets</a>
+								(all the assets like catalog jpg/png files)
+								</p>
+								<p>
+								<a href="https://github.com/qalingo/qalingo-web-classic-fo-bo" target="_blank">https://github.com/qalingo/qalingo-web-classic-fo-bo</a>
+								(classic MVC backoffices and frontoffices)
+								</p>
+							</div>
+							<div>
+								<h3>Maven configuration</h3>
+								<p>You will found the settings.xml configuration here <a href="https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/tools/Maven_m2_conf" target="_blank">https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/tools/Maven_m2_conf</a></p>
+								<p>You can replace your default Maven configuration or In this file there the Maven profile to use "dev-qalingo" and the proxy repository <a href="http://nexus.hoteia.com" target="_blank">nexus.hoteia.com</a></p>
+							</div>
+							<div>
+								<h3>Database configuration</h3>
+								<p>There is all the SQL defaut configuration and demo datas in the "qalingo-b2c-engine" repository.</p>
+								<p><a href="https://github.com/qalingo/qalingo-b2c-engine\qalingo-misc\qalingo-sql\src\main\resources\sql\mysql" target="_blank">qalingo-b2c-engine\qalingo-misc\qalingo-sql\src\main\resources\sql\mysql</a></p>
+								<p>Run the maven goal from this sub project <b>qalingo-b2c-engine\qalingo-misc\qalingo-sql\</b></p>
+								<p>SQL schema and core datas with demo datas: <code>Demo SQL mvn clean install -P dev-qalingo -Dskip-setup-mysql=false</code></p>
+								<p>(or SQL schema and core datas <b>without</b> demo datas: <code>mvn clean package -P dev-qalingo -Dskip-setup-mysql=false</code>)</p>
+							</div>
+							<div>
+								<h3>Apache configuration</h3>
+								<p>You can run the project without Apache and directly with Tomcat, but it is cleaner.</p>
+								<p>The linux configuration is here:</p>
+								<p><a href="https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Apache_conf" target="_blank">https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Apache_conf</a></p>
+								<p>The windows configuration is here:</p>
+								<p><a href="https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/servers/Apache_conf" target="_blank">https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/servers/Apache_conf</a></p>
+							</div>
+							<div>
+								<h3>Tomcat configuration</h3>
+								<p>The linux configuration is here:</p>
+								<p><a href="https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Tomcat" target="_blank">https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Tomcat</a></p>
+								<p>The windows configuration is here:</p>
+								<p><a href="https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/servers/Tomcat" target="_blank">https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/servers/Tomcat</a></p>
+							</div>
+							<div>
+								<h3>Build all and Run</h3>
+								<p>To build all the project use a pom.xml global at the root of your workspace.</p>
+								<p>Like this one <a href="https://github.com/qalingo/qalingo-project-parent" target="_blank">https://github.com/qalingo/qalingo-project-parent</a></p>
+								<p>To run your Tomcat, we use scripts (sh/bat) but you take your own way.</p>
+								<p>The linux batch files is here:</p>
+								<p><a href="https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/bin" target="_blank">https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/bin</a></p>
+								<p>The windows batch files is here:</p>
+								<p><a href="https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/bin" target="_blank">https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/bin</a></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-unstyled">
+							<li class="pull-right"><a href="#top">Back to top</a></li>
+							<li><a href="http://twitter.com/QalingoEco" target="_blank">Twitter</a></li>
+							<li><a href="http://github.com/qalingo" target="_blank">GitHub</a></li>
+							<li><a href="http://stackoverflow.com/questions/tagged/qalingo" target="_blank">Stack Overflow</a></li>
+							<li><a href="http://nexus.hoteia.com/index.html#nexus-search;quick~qalingo" target="_blank">Nexus Repository</a></li>
+						</ul>
+					<p>Code released under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License V2.0</a>.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/js/bootswatch.js"></script>
+
+	</body>
+</html>
