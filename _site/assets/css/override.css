@@ -1,0 +1,210 @@
+
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-inverse {
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+
+.navbar-inverse .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.btn-primary {
+    background-color: #006DCC;
+    background-image: linear-gradient(to bottom, #0088CC, #0044CC);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bs-masthead {
+    padding-top: 0px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.bs-masthead h1 {
+    color: #5A5A5A;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.bs-docs-nav .navbar-nav > li > a {
+    color: #999999;
+}
+
+.bs-docs-nav .navbar-toggle {
+    border-color: #999999;
+}
+
+.bs-docs-nav .navbar-toggle:hover {
+    background-color: #999999;
+    border-color: #999999;
+}
+
+.bs-docs-nav .navbar-collapse {
+    border-color: #999999;
+}
+
+.bs-docs-home, .bs-header {
+    background: none;
+}
+
+.bs-social{
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #FFFFFF;
+    padding: 15px 0;
+	margin-top: 0px;
+}
+
+.container-social{
+    text-align: center;
+}
+
+.qalingo-jumbotron {
+	background: none repeat scroll 0 0 #020031;
+	margin-bottom: 0px;
+	text-align: center;
+	color: #fff;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.qalingo-jumbotron h1 {
+	font-size: 100px;
+    letter-spacing: -2px;
+    line-height: 1;
+	font-weight: bold;
+	font-family: inherit;
+	color: #fff;
+	text-rendering: optimizelegibility;
+}
+
+.qalingo-jumbotron p {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.25;
+	margin-bottom: 30px;
+}
+
+.qalingo-jumbotron .btn {
+    border: 0 none;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 5px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 10px 10px;
+    transition: none 0s ease 0s;
+}
+
+.masthead-links {
+    list-style: none outside none;
+    margin: 0;
+}
+
+.bs-docs-nav {
+    background-color: #111111;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    margin-left: 20px;
+    padding-right: 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+    transition: all 0.2s linear 0s;
+}
+
+.container-stack {
+	padding: 0;
+}
+
+.marketing {
+    color: #5A5A5A;
+    text-align: center;
+	width: 100%;
+}
+
+.marketing h1 {
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin: 60px 0 10px;
+}
+
+
+.marketing .marketing-byline {
+    color: #999999;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 40px;
+}
+
+.footer{
+	background-color: #F5F5F5;
+	border-top: 1px solid #E5E5E5;
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+
+
+.footer p {
+    color: #777777;
+    margin-bottom: 0;
+}
+
+.google-follow {
+	color: #333333;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+
+.tooltip-inner {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #FFFFFF;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #FFFFFF;
+}
+.tooltip.left .tooltip-arrow {
+    border-left-color: #FFFFFF;
+}
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #FFFFFF;
+}
+
+.footer a:hover {
+	color: #990099;
+}

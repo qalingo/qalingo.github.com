@@ -1,0 +1,6 @@
+
+/docs/getting-started/index.html
+/docs/roadmap/index.html
+/docs/index.html
+/docs/api/index.html
+/sitemap.txt
