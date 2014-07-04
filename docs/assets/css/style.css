@@ -1,7 +1,14 @@
 
+.row-home {
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
 
+.row-col-home {
+	text-align: center;
+}
 
-.complete-documentation{
+.complete-documentation {
 	text-align: right;
 }
 
