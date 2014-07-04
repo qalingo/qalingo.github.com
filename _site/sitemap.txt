@@ -1,4 +1,5 @@
 
+/docs/features/index.html
 /docs/getting-started/index.html
 /docs/roadmap/index.html
 /docs/index.html
