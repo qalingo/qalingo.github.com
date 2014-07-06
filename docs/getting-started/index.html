@@ -48,13 +48,16 @@ group: navigation
 								<h3>Database configuration</h3>
 								<p>There is all the SQL defaut configuration and demo datas in the "qalingo-b2c-engine" repository.</p>
 								<p><a href="https://github.com/qalingo/qalingo-b2c-engine\qalingo-misc\qalingo-sql\src\main\resources\sql\mysql" target="_blank">qalingo-b2c-engine\qalingo-misc\qalingo-sql\src\main\resources\sql\mysql</a></p>
-								<p>Run the maven goal from this sub project <b>qalingo-b2c-engine\qalingo-misc\qalingo-sql\</b></p>
-								<p>SQL schema and core datas with demo datas: <code>mvn clean install -P dev-qalingo -Dskip-setup-mysql=false</code></p>
-								<p>(or SQL schema and core datas <b>without</b> demo datas: <code>mvn clean package -P dev-qalingo -Dskip-setup-mysql=false</code>)</p>
+								<p>Some Maven goals are in the sub project <b>qalingo-b2c-engine\qalingo-misc\qalingo-sql\</b>; to help you to manage the database. Don't forget to change project setting values for the "dev-qalingo" profile in your Maven conf settings.xml</p>
+								<p>The default name of the database is "qalingo" and defined in create-database-qalingo.sql.</p>
+								<p>Create database, load SQL schema,load core datas with demo datas: </p>
+								<pre><code>mvn clean install -P dev-qalingo -Dskip-setup-mysql=false</code></pre>
+								<p>or Create database, load SQL schema,load core datas <b>without</b> demo datas: </p>
+								<pre><code>mvn clean package -P dev-qalingo -Dskip-setup-mysql=false</code></pre>
 							</div>
 							<div>
 								<h3>Apache configuration</h3>
-								<p>You can run the project without Apache and directly with Tomcat, but it is cleaner.</p>
+								<p>You can run the project with Apache and without, directly with Tomcat (with Apache, this is cleaner).</p>
 								<p>The linux configuration is here:</p>
 								<p><a href="https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Apache_conf" target="_blank">https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Apache_conf</a></p>
 								<p>The windows configuration is here:</p>
@@ -62,6 +65,7 @@ group: navigation
 							</div>
 							<div>
 								<h3>Tomcat configuration</h3>
+								<p>We are working with many Tomcat instances, and set the port at start. Connfiguration file server.xml is available here: </p>
 								<p>The linux configuration is here:</p>
 								<p><a href="https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Tomcat" target="_blank">https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/servers/Tomcat</a></p>
 								<p>The windows configuration is here:</p>
@@ -76,6 +80,7 @@ group: navigation
 								<p><a href="https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/bin" target="_blank">https://github.com/qalingo/qalingo-quick-start-linux-env/tree/master/qalingo/bin</a></p>
 								<p>The windows batch files are here:</p>
 								<p><a href="https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/bin" target="_blank">https://github.com/qalingo/qalingo-quick-start-windows-env/tree/master/qalingo/bin</a></p>
+								<pre><code>mvn clean install -P dev-qalingo</code></pre>
 							</div>
 						</div>
 
