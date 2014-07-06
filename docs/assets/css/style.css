@@ -4,6 +4,11 @@
 	margin-bottom: 30px;
 }
 
+.row-information {
+	text-align: center;
+	font-style: italic;
+}
+
 .row-col-home {
 	text-align: center;
 }
