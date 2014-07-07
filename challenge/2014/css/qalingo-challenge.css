@@ -194,6 +194,22 @@ i.award-icon {
   text-align: center;
 }
 
+/* CloudWatt */
+
+.cloudwatt-row {
+/*
+  color: #B7429A;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/cloud-watt-banner.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+*/
+}
+
 /* Indiegogo */
 
 .indiegogo-row {
