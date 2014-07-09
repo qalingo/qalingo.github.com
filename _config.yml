@@ -32,6 +32,11 @@ docs :
   ga_account : UA-36007855-1
   ga_domain : qalingo.org
 
+drydock :
+  root_path : /drydock
+  ga_account : UA-36007855-1
+  ga_domain : qalingo.org
+
 challenge :
   ga_account : UA-36007855-4
   domain : qalingo.org
