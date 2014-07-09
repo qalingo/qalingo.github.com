@@ -1,0 +1,41 @@
+
+h3, .h3 {
+    font-size: 19px;
+}
+
+.row-home {
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.row-information {
+	text-align: center;
+	font-style: italic;
+}
+
+.row-col-home {
+	text-align: center;
+}
+
+.complete-documentation {
+	text-align: right;
+}
+
+.google-follow {
+    color: #333333;
+    font-family: 'Helvetica Neue',Arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.bs-docs-footer-links li {
+    padding-right: 10px;
+}
+
+ul.icons {
+    list-style: none outside none;
+    margin-left: 0;
+    padding: 0;
+}
