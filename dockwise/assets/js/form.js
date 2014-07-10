@@ -20,4 +20,6 @@ $( document ).ready(function() {
 		$('#newsletter-success-panel').show();
 	}
 	
+	$('#newsletter-success-panel').hide();
+	
 });
