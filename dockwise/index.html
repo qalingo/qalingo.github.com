@@ -17,52 +17,35 @@ group: navigation
 							<p>We know the eCommerce, we know the technology, we will build or migrate yours in the cloud.</p>
 							<p>Technology stack: Qalingo with Github, Docker images, Continuous delivery with Jenkins.</p>
 						</div>
-						<div class="row row-home">
-
-<form onsubmit="" target="_self" id="ss-form" method="POST" action="" id="form-newsletter"><ol style="padding-left: 0" class="ss-question-list" role="list">
-<div role="listitem" class="ss-form-question errorbox-good">
-<div class="ss-item ss-item-required ss-text" dir="ltr"><div class="ss-form-entry">
-<label for="entry_1464826012" class="ss-q-item-label"><div class="ss-q-title">Lastname
-<label aria-label="(Champ obligatoire)" for="itemView.getDomIdToLabel()"></label>
-<span class="ss-required-asterisk">*</span></div>
-<div dir="ltr" class="ss-q-help ss-secondary-text"></div></label>
-<input type="text" title="" required="" aria-required="true" aria-label="Lastname  " dir="auto" id="entry_1464826012" class="ss-q-short" value="" name="entry.1464826012">
-<div id="1531988731_errorMessage" class="error-message"></div>
-<div class="required-message">Cette question est obligatoire.</div>
-</div></div></div> <div role="listitem" class="ss-form-question errorbox-good">
-<div class="ss-item ss-item-required ss-text" dir="ltr"><div class="ss-form-entry">
-<label for="entry_1227480568" class="ss-q-item-label"><div class="ss-q-title">Firstname
-<label aria-label="(Champ obligatoire)" for="itemView.getDomIdToLabel()"></label>
-<span class="ss-required-asterisk">*</span></div>
-<div dir="ltr" class="ss-q-help ss-secondary-text"></div></label>
-<input type="text" title="" required="" aria-required="true" aria-label="Firstname  " dir="auto" id="entry_1227480568" class="ss-q-short" value="" name="entry.1227480568">
-<div id="105473225_errorMessage" class="error-message"></div>
-<div class="required-message">Cette question est obligatoire.</div>
-</div></div></div> <div role="listitem" class="ss-form-question errorbox-good">
-<div class="ss-item ss-item-required ss-text" dir="ltr"><div class="ss-form-entry">
-<label for="entry_246834050" class="ss-q-item-label"><div class="ss-q-title">Email
-<label aria-label="(Champ obligatoire)" for="itemView.getDomIdToLabel()"></label>
-<span class="ss-required-asterisk">*</span></div>
-<div dir="ltr" class="ss-q-help ss-secondary-text"></div></label>
-<input type="email" title="Veuillez saisir une adresse e-mail valide." required="" aria-required="true" aria-label="Email  Veuillez saisir une adresse e-mail valide." dir="auto" id="entry_246834050" class="ss-q-short" value="" name="entry.246834050">
-<div id="854250865_errorMessage" class="error-message">Veuillez saisir une adresse e-mail valide.</div>
-<div class="required-message">Cette question est obligatoire.</div>
-</div></div></div>
-<input type="hidden" value="[,,&quot;-8894315670517555885&quot;]
-" name="draftResponse">
-<input type="hidden" value="0" name="pageHistory">
-
-
-<input type="hidden" value="-8894315670517555885" name="fbzx">
-
-<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td dir="ltr" id="navigation-buttons" class="ss-form-entry goog-inline-block">
-<input type="submit" id="form-newsletter-submit" value="Envoyer" name="submit"></td>
-
-</tr></tbody></table></div></ol></form>
-
-
-
-
+						<div id="newsletter-form-panel" class="row row-home col-lg-5 col-lg-offset-3">
+							<form action="" method="POST" id="newsletter-form" onsubmit="" class="form-horizontal">
+								<fieldset>
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="lastname">Lastname*</label>
+										 <div class="col-lg-10">
+											<input id="lastname" name="lastname" type="text" placeholder="Lastname"  class="form-control">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="firstname">Firstname*</label>
+										 <div class="col-lg-10">
+											<input id="firstname" name="firstname" type="text" placeholder="Firstname"  class="form-control">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="email">Email*</label>
+										 <div class="col-lg-10">
+											<input id="email" name="email" type="text" placeholder="Email"  class="form-control">
+										</div>
+									</div>
+									<div class="form-group text-right">
+										<input id="form-newsletter-submit" name="submit" type="submit" value="Submit" class="btn btn-default">
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div id="newsletter-success-panel" class="row row-home col-lg-5 col-lg-offset-3">
+							Your informations are saved, stay tuned!
 						</div>
 					</div>
 				</div>

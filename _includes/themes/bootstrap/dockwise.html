@@ -89,33 +89,7 @@
 		<script src="{{ site.dockwise.root_path}}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 		<script src="{{ site.dockwise.root_path}}/assets/resources/bootstrap/js/docs.min.js"></script>
 		<script src="{{ site.dockwise.root_path}}/assets/resources/bootstrap/js/customize.min.js"></script>
-
-		<script>
-			$( document ).ready(function() {
-$('#form-newsletter-submit').click( function() {
-
-$.ajax({
-  url: "https://docs.google.com/a/hoteia.com/forms/d/1vMGcc_PCG__6XXtoF6mv5lSlntNxLHc4py42X3e7wtA/formResponse",
-  data: { "entry.1464826012": 'denis', "entry.1227480568": 'gosset', "entry.246834050": 'denis.gosset@hoteia.com' },
-  type: "POST",
-  dataType: "xml",
-  success: function(data, textStatus, XMLHttpRequest) {
-    console.log("success");
-    console.log(data);
-  },
-  error: function(XMLHttpRequest, textStatus, errorThrown) {
-    console.log("error");
-    console.log(textStatus);
-    console.log(errorThrown);
-  },
-})
-return false;
-});
-
-
-			});
-		</script>
-
+		<script src="{{ site.dockwise.root_path}}/assets/js/form.js"></script>
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

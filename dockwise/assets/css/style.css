@@ -39,3 +39,7 @@ ul.icons {
     margin-left: 0;
     padding: 0;
 }
+
+.form-control {
+	width: 350px;
+}
