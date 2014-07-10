@@ -32,8 +32,8 @@ docs :
   ga_account : UA-36007855-1
   ga_domain : qalingo.org
 
-drydock :
-  root_path : /drydock
+dockwise :
+  root_path : /dockwise
   ga_account : UA-36007855-1
   ga_domain : qalingo.org
 
