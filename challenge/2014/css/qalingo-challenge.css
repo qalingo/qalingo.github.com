@@ -370,3 +370,11 @@ i.scroll:hover {
     margin-bottom: 10px;
     vertical-align: middle;
 }
+
+.form-control {
+	width: 350px;
+}
+
+#register-success-panel {
+	width: 350px;
+}

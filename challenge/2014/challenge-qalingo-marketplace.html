@@ -64,6 +64,36 @@
 						<a href="https://www.eventbrite.com/e/billets-qalingo-challenge-developer-2014-11901781549?ref=ebtn" target="_blank"><img src="https://www.eventbrite.fr/custombutton?eid=11901781549" alt="Eventbrite - Qalingo Challenge Developer 2014" /></a>
 					</div>
 				</div>
+				
+				<div class="row row-home col-lg-5 col-lg-offset-3" id="register-form-panel">
+					<form class="form-horizontal" onsubmit="" id="register-form" method="POST" action="">
+						<fieldset>
+							<div class="form-group">
+								<label for="lastname" class="col-lg-2 control-label">Lastname*</label>
+								 <div class="col-lg-10">
+									<input type="text" class="form-control" placeholder="Lastname" name="lastname" id="lastname">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="firstname" class="col-lg-2 control-label">Firstname*</label>
+								 <div class="col-lg-10">
+									<input type="text" class="form-control" placeholder="Firstname" name="firstname" id="firstname">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-lg-2 control-label">Email*</label>
+								 <div class="col-lg-10">
+									<input type="text" class="form-control" placeholder="Email" name="email" id="email">
+								</div>
+							</div>
+							<div class="form-group text-right">
+								<input type="submit" class="btn btn-default" value="Submit" name="submit" id="form-register-submit">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				
+				
 				<div class="bs-social text-center" style="margin-top: 30px;">
 					<div class="container container-social">
 						<ul class="bs-social-buttons">
@@ -373,6 +403,7 @@
 
 		<script src="js/jquery-1.10.2.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<script src="js/form.js"></script>
 
 		<script>
 		$("#menu-close").click(function(e) {
