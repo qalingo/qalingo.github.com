@@ -378,3 +378,9 @@ i.scroll:hover {
 #register-success-panel {
 	width: 350px;
 }
+
+
+input[type=email]:valid { border-color: green; }
+input[type=email]:invalid:after { content: “Error message”; }
+
+
