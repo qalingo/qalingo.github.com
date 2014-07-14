@@ -45,10 +45,12 @@ ul.icons {
 
 #register-success-panel {
 	width: 350px;
+	display:none;
 }
 
 #register-error-panel {
 	color: red;
+	display:none;
 }
 
 input[type=text]:valid { border-color: green; }

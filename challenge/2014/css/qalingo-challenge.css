@@ -376,10 +376,12 @@ i.scroll:hover {
 }
 
 #register-success-panel {
+	display:none;
 	width: 350px;
 }
 
 #register-error-panel {
+	display:none;
 	color: red;
 }
 
