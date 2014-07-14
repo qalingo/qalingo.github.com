@@ -379,8 +379,13 @@ i.scroll:hover {
 	width: 350px;
 }
 
+#register-error-panel {
+	color: red;
+}
+
+input[type=text]:valid { border-color: green; }
+input:focus:invalid { border-color: red; }
 
 input[type=email]:valid { border-color: green; }
-input[type=email]:invalid:after { content: “Error message”; }
-
+input:focus:invalid { border-color: red; }
 

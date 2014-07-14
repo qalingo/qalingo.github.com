@@ -46,3 +46,14 @@ ul.icons {
 #register-success-panel {
 	width: 350px;
 }
+
+#register-error-panel {
+	color: red;
+}
+
+input[type=text]:valid { border-color: green; }
+input:focus:invalid { border-color: red; }
+
+input[type=email]:valid { border-color: green; }
+input:focus:invalid { border-color: red; }
+
