@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Qalingo documentation 
-header: Qalingo documentation 
+title: How to contribute some fix or feature
+header: How to contribute some fix or feature
 group: navigation
 ---
 
@@ -20,7 +20,7 @@ group: navigation
 								<p></p>
 								<h3>Quick tip if you are not comfortable with Git. How to re synchronise your forked repository with us? (Syncing a fork)</h3>
 								<p>If you are working on a fix or a features on your local workspace, you can be "block" on the "pull request" step if your project is not "sync".</p>
-								<p>Github could not automatically merge your pull request with us, the "origin".</p>
+								<p>Github could not automatically merge your pull request with us, the "upstream".</p>
 								<p>The easy way is to do this, like you can read this on <a href="https://help.github.com/articles/syncing-a-fork" target="_blank">https://help.github.com/articles/syncing-a-fork</a></p>
 								<p>Display the upstream on your project (and see your project repo from GitHub).</p>
 								<pre>
@@ -31,7 +31,7 @@ git remote -v
 								<p>Add our "origin" repository</p>
 								<pre>
 									<code>
-git remote add upstream https://github.com/qalingo/qalingo-engine.git (Tis URL is an example, use the good one!)
+git remote add upstream https://github.com/qalingo/qalingo-engine.git (This URL is an example, use the good one!)
 									</code>
 								</pre>
 								<p>Check the result</p>
@@ -45,7 +45,7 @@ git remote -v
 									<code>
 git fetch upstream
 git merge upstream/master
-git commit -a -m "Synchronisation avec le repo original"
+git commit -a -m "Syncing the fork"
 git push
 									</code>
 								</pre>
