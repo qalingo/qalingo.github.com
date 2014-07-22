@@ -17,7 +17,16 @@ h3, .h3 {
 	text-align: center;
 }
 
+.contribute {
+}
+
+.contribute-code {
+	float: left;
+	text-align: left;
+}
+
 .complete-documentation {
+	float: right;
 	text-align: right;
 }
 

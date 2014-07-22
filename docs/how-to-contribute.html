@@ -1,0 +1,57 @@
+---
+layout: docs
+title: Qalingo documentation 
+header: Qalingo documentation 
+group: navigation
+---
+
+			<div class="bs-docs-section clearfix">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page-header">
+							<h2 id="page-header-title"><i class="fa fa-lightbulb-o"></i> How to contribute some fix or feature</h2>
+						</div>
+						<div>
+							<div>
+								<p>If you find some bugs or you have some ideas to add some new features, you can fork the repository which contains the impacted project, add/change something and send your pull request.</p>
+								<h3>Clone with your IDE or git the repository.</h3>
+								<p>Clone with your IDE or git this repository and add the projet in your IDE.</p>
+								<p>Example, most part of the code is in the Engine: <a href="https://github.com/qalingo/qalingo-engine" target="_blank">https://github.com/qalingo/qalingo-engine</a></p>
+								<p></p>
+								<h3>Quick tip if you are not comfortable with Git. How to re synchronise your forked repository with us? (Syncing a fork)</h3>
+								<p>If you are working on a fix or a features on your local workspace, you can be "block" on the "pull request" step if your project is not "sync".</p>
+								<p>Github could not automatically merge your pull request with us, the "origin".</p>
+								<p>The easy way is to do this, like you can read this on <a href="https://help.github.com/articles/syncing-a-fork" target="_blank">https://help.github.com/articles/syncing-a-fork</a></p>
+								<p>Display the upstream on your project (and see your project repo from GitHub).</p>
+								<pre>
+									<code>
+git remote -v
+									</code>
+								</pre>
+								<p>Add our "origin" repository</p>
+								<pre>
+									<code>
+git remote add upstream https://github.com/qalingo/qalingo-engine.git (Tis URL is an example, use the good one!)
+									</code>
+								</pre>
+								<p>Check the result</p>
+								<pre>
+									<code>
+git remote -v
+									</code>
+								</pre>
+								<p>Fetch us,the "upstream", merge our work on your workspace, commit & push on your remote Github project.</p>
+								<pre>
+									<code>
+git fetch upstream
+git merge upstream/master
+git commit -a -m "Synchronisation avec le repo original"
+git push
+									</code>
+								</pre>
+								<p>Everything's good? Now if you ask a "pull request" on GitHub, the "automatically merge" should be OK/Green!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
