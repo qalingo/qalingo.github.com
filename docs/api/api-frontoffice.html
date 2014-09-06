@@ -1,0 +1,388 @@
+---
+layout: docs
+title: API - Frontoffice
+header: API - Frontoffice
+group: navigation
+---
+
+			<div class="bs-docs-section clearfix">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page-header">
+							<h2 id="page-header-title"><i class="fa fa-cubes"></i> API - Frontoffice</h2>
+						</div>
+
+						<div>
+<p>All the online REST Frontoffice demo is here <a href="http://remote-rest-frontoffice.demo.qalingo.com/" target="_blank">http://remote-rest.-frontofficedemo.qalingo.com/</a></p>
+<p>The source code of this webapp Rest fronoffice is here <a href="https://github.com/qalingo/qalingo-web-remote" target="_blank">https://github.com/qalingo/qalingo-web-remote</a> and some services are secured with Spring-security.</p>
+<p>If you need more features, tell us, we will add it!</p>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Customer</h2>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/CustomerRestService.java" target="_blank">CustomerRestService.java</a></p>
+
+<h3>Customer private informations</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /customer/account</li>
+	<li>Method: GET</li>
+	<li>is secured</li>
+	<li>Produces: CustomerPojoResponse</li>
+</ul>
+      
+<h3>Customer public informations</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /customer/permalink/{permalink}</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: CustomerPojoResponse</li>
+</ul>
+    
+<h3>Customer create</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /customer/</li>
+	<li>Method: POST</li>
+	<li>is not secured</li>
+	<li>Consumes: CustomerPojo</li>
+	<li>
+		<pre>
+		{
+    		"login": "xxxx",
+    		"title": "xxxx",
+    		"firstname": "xxxx",
+    		"lastname": "xxxx",
+    		"email": "xxxx",
+    		"password": "xxxx",
+    		"defaultLocale": "xxxx",
+    		"guest": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: void</li>
+</ul>
+
+<h3>Customer update</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /customer/account</li>
+	<li>Method: PUT</li>
+	<li>is secured</li>
+	<li>Consumes: CustomerPojo</li>
+	<li>
+		<pre>
+		{
+    		"login": "xxxx",
+    		"title": "xxxx",
+    		"firstname": "xxxx",
+    		"lastname": "xxxx",
+    		"email": "xxxx",
+    		"password": "xxxx",
+    		"defaultLocale": "xxxx",
+    		"guest": false
+		}
+		</pre>
+	</li>
+	<li>Produces: void</li>
+</ul>
+
+<h3>Customer wishlist - product list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /customer/wishlist</li>
+	<li>Method: GET</li>
+	<li>is secured</li>
+	<li>Produces: WishlistPojoResponse</li>
+</ul>
+
+<h3>Customer add to wishlist</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /customer/wishlist</li>
+	<li>Method: PUT</li>
+	<li>is secured</li>
+	<li>Consumes: WishlistPojoRequest</li>
+	<li>
+		<pre>
+		{
+			"marketAreaCode": "xxxx",
+			"catalogCategoryCode": "xxxx",
+			"productSkuCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: AddToWishlistPojoResponse</li>
+</ul>
+    
+<hr>
+
+<h2><i class="fa fa-cube"></i> Catalog</h2>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/CatalogRestService.java" target="_blank">CatalogRestService.java</a></p>
+
+<h3>Virtual Catalog list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /catalog/virtual/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: CatalogListPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /catalog/virtual/{catalogCode}</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: CatalogPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Category list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /catalog/virtual/{catalogCode}/category/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: CategoryListPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Category details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /catalog/virtual/{catalogCode}/category/{categoryCode}/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: CategoryPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Product Marketing list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: ProductListPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Product Marketing details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/{productCode}</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: ProductPojoResponse</li>
+</ul>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Cart / Checkout</h2>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/CartRestService.java" target="_blank">CartRestService.java</a></p>
+
+<h3>Cart - details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"marketAreaCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Cart - add item to cart</h3>
+<p>You need to call the "cart details" before, to get a cartId.</p>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/items/</li>
+	<li>Method: POST</li>
+	<li>is not secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"marketAreaCode": "xxxx"
+			"cartId": "xxxx"
+			"productSkuCode": "xxxx"
+			"catalogCategoryCode": "xxxx"
+			"quantity": 1
+		}
+		</pre>
+	</li>
+	<li>Produces: AddToCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Cart - update item to cart</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/items/</li>
+	<li>Method: PUT</li>
+	<li>is not secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"productSkuCode": "xxxx",
+			"quantity": 1
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Cart - update item to cart</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/items/</li>
+	<li>Method: DELETE</li>
+	<li>is not secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"productSkuCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set promocode (TODO)</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/promocode/</li>
+	<li>Method: POST</li>
+	<li>is not secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"promoCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set the shipping address</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/shipping-address/</li>
+	<li>Method: POST</li>
+	<li>is secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"customerAddressId": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set the billing address</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/billing-address/</li>
+	<li>Method: POST</li>
+	<li>is secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"customerAddressId": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set the delivery method</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /cart/delivery-method/</li>
+	<li>Method: POST</li>
+	<li>is secured</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"deliveryMethodCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
+</ul>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Retailer</h2>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/RetailerRestService.java" target="_blank">RetailerRestService.java</a></p>
+
+<h3>Retailer - list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /retailer/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: RetailerListPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Retailer - details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /retailer/{code}</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: RetailerPojoResponse</li>
+</ul>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Store</h2>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/StoreRestService.java" target="_blank">StoreRestService.java</a></p>
+
+<h3>Store - list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /store/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: StoreListPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Store - details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /store/{code}</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: StorePojoResponse</li>
+</ul>
+
+<hr>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
