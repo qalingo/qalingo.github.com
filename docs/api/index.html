@@ -20,13 +20,14 @@ group: navigation
 <hr>
 
 <h2><i class="fa fa-cube"></i> Customer</h2>
+<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
 
 <h3>Customer private informations</h3>
 <ul style="padding-left: 50px;" class="icons">
 	<li>path: /customer/account</li>
 	<li>method: GET</li>
 	<li>is secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: CustomerPojoResponse</li>
 </ul>
       
 <h3>Customer public informations</h3>
@@ -34,7 +35,7 @@ group: navigation
 	<li>path: /customer/permalink/{permalink}</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: CustomerPojoResponse</li>
 </ul>
     
 <h3>Customer create</h3>
@@ -42,8 +43,22 @@ group: navigation
 	<li>path: /customer/</li>
 	<li>method: POST</li>
 	<li>is not secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes: CustomerPojo</li>
+	<li>
+		<pre>
+		{
+			"login": "xxxx",
+    		"title": "xxxx",
+    		"firstname": "xxxx",
+    		"lastname": "xxxx",
+    		"email": "xxxx",
+    		"password": "xxxx",
+    		"defaultLocale": "xxxx",
+    		"guest": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: void</li>
 </ul>
 
 <h3>Customer update</h3>
@@ -51,38 +66,61 @@ group: navigation
 	<li>path: /customer/account</li>
 	<li>method: PUT</li>
 	<li>is secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes: CustomerPojo</li>
+	<li>
+		<pre>
+		{
+			"login": "xxxx",
+    		"title": "xxxx",
+    		"firstname": "xxxx",
+    		"lastname": "xxxx",
+    		"email": "xxxx",
+    		"password": "xxxx",
+    		"defaultLocale": "xxxx",
+    		"guest": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: void</li>
 </ul>
 
-<h3>Customer update</h3>
+<h3>Customer wishlist - product list</h3>
 <ul style="padding-left: 50px;" class="icons">
 	<li>path: /customer/wishlist</li>
 	<li>method: GET</li>
 	<li>is secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Produces: WishlistPojoResponse</li>
 </ul>
 
-<h3>Customer update</h3>
+<h3>Customer add to wishlist</h3>
 <ul style="padding-left: 50px;" class="icons">
 	<li>path: /customer/wishlist</li>
 	<li>method: PUT</li>
 	<li>is secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes: WishlistPojoRequest</li>
+	<li>
+		<pre>
+		{
+			"marketAreaCode": "xxxx",
+			"catalogCategoryCode": "xxxx",
+			"productSkuCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: AddToWishlistPojoResponse</li>
 </ul>
     
 <hr>
 
 <h2><i class="fa fa-cube"></i> Catalog</h2>
+<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
 
 <h3>Virtual Catalog list</h3>
 <ul style="padding-left: 50px;" class="icons">
 	<li>path: /catalog/virtual/</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: CatalogListPojoResponse</li>
 </ul>
 
 <hr>
@@ -92,7 +130,7 @@ group: navigation
 	<li>path: /catalog/virtual/{catalogCode}</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: CatalogPojoResponse</li>
 </ul>
 
 <hr>
@@ -102,7 +140,7 @@ group: navigation
 	<li>path: /catalog/virtual/{catalogCode}/category/</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: CategoryListPojoResponse</li>
 </ul>
 
 <hr>
@@ -112,7 +150,7 @@ group: navigation
 	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: CategoryPojoResponse</li>
 </ul>
 
 <hr>
@@ -122,7 +160,7 @@ group: navigation
 	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: ProductListPojoResponse</li>
 </ul>
 
 <hr>
@@ -132,30 +170,51 @@ group: navigation
 	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/{productCode}</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Produces: TODO</li>
+	<li>Produces: ProductPojoResponse</li>
 </ul>
 
 <hr>
 
-<h2><i class="fa fa-cube"></i> Cart/Checkout</h2>
+<h2><i class="fa fa-cube"></i> Cart / Checkout</h2>
+<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+
 <h3>Cart - details</h3>
 <ul style="padding-left: 50px;" class="icons">
 	<li>path: /cart/</li>
 	<li>method: GET</li>
 	<li>is not secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"marketAreaCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
 </ul>
 
 <hr>
 
 <h3>Cart - add item to cart</h3>
+<p>You need to call the "cart details" before, to get a cartId.</p>
 <ul style="padding-left: 50px;" class="icons">
 	<li>path: /cart/items/</li>
 	<li>method: POST</li>
 	<li>is not secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"marketAreaCode": "xxxx"
+			"cartId": "xxxx"
+			"productSkuCode": "xxxx"
+			"catalogCategoryCode": "xxxx"
+			"quantity": 1
+		}
+		</pre>
+	</li>
+	<li>Produces: AddToCartPojoResponse</li>
 </ul>
 
 <hr>
@@ -165,8 +224,17 @@ group: navigation
 	<li>path: /cart/items/</li>
 	<li>method: PUT</li>
 	<li>is not secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"productSkuCode": "xxxx",
+			"quantity": 1
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
 </ul>
 
 <hr>
@@ -176,8 +244,16 @@ group: navigation
 	<li>path: /cart/items/</li>
 	<li>method: DELETE</li>
 	<li>is not secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"productSkuCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
 </ul>
 
 <hr>
@@ -187,8 +263,16 @@ group: navigation
 	<li>path: /cart/promocode/</li>
 	<li>method: POST</li>
 	<li>is not secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"promoCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
 </ul>
 
 <hr>
@@ -198,8 +282,16 @@ group: navigation
 	<li>path: /cart/shipping-address/</li>
 	<li>method: POST</li>
 	<li>is secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"customerAddressId": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
 </ul>
 
 <hr>
@@ -209,8 +301,16 @@ group: navigation
 	<li>path: /cart/billing-address/</li>
 	<li>method: POST</li>
 	<li>is secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"customerAddressId": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
 </ul>
 
 <hr>
@@ -220,13 +320,23 @@ group: navigation
 	<li>path: /cart/delivery-method/</li>
 	<li>method: POST</li>
 	<li>is secured</li>
-	<li>Consumes: TODO</li>
-	<li>Produces: TODO</li>
+	<li>Consumes:</li>
+	<li>
+		<pre>
+		{
+			"cartId": "xxxx",
+			"deliveryMethodCode": "xxxx"
+		}
+		</pre>
+	</li>
+	<li>Produces: CommonCartPojoResponse</li>
 </ul>
 
 <hr>
 
 <h2><i class="fa fa-cube"></i> Retailer</h2>
+<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+
 <h3>Retailer</h3>
 <ul style="padding-left: 50px;" class="icons">
 	<li><a href="http://remote-rest.demo.qalingo.com/rest/retailer/" target="_blank">http://remote-rest.demo.qalingo.com/rest/retailer/</a></li>
@@ -235,6 +345,8 @@ group: navigation
 <hr>
 
 <h2><i class="fa fa-cube"></i> Store</h2>
+<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+
 <h3>Store</h3>
 <ul style="padding-left: 50px;" class="icons">
 	<li><a href="http://remote-rest.demo.qalingo.com/rest/store/" target="_blank">http://remote-rest.demo.qalingo.com/rest/store/</a></li>
@@ -243,6 +355,8 @@ group: navigation
 <hr>
 
 <h2><i class="fa fa-cube"></i> CMS</h2>
+<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+
 <h3>CMS Backoffice</h3>
 <p>This part is used to get datas for the CMS. CMS need to datas like marketArea, Localization, Catalog, Products, etc.</p>
 
