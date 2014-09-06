@@ -14,11 +14,237 @@ group: navigation
 
 						<div>
 <p>All the online REST demo is here <a href="http://remote-rest.demo.qalingo.com/" target="_blank">http://remote-rest.demo.qalingo.com/</a></p>
+<p>The source code of this webapp is here <a href="https://github.com/qalingo/qalingo-web-remote" target="_blank">https://github.com/qalingo/qalingo-web-remote</a> and some services are secured with Spring-security.</p>
+<p>If you need more features, tell us, we will add it!</p>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Customer</h2>
+
+<h3>Customer private informations</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /customer/account</li>
+	<li>method: GET</li>
+	<li>is secured</li>
+	<li>Produces: TODO</li>
+</ul>
+      
+<h3>Customer public informations</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /customer/permalink/{permalink}</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: TODO</li>
+</ul>
+    
+<h3>Customer create</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /customer/</li>
+	<li>method: POST</li>
+	<li>is not secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<h3>Customer update</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /customer/account</li>
+	<li>method: PUT</li>
+	<li>is secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<h3>Customer update</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /customer/wishlist</li>
+	<li>method: GET</li>
+	<li>is secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<h3>Customer update</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /customer/wishlist</li>
+	<li>method: PUT</li>
+	<li>is secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+    
+<hr>
+
+<h2><i class="fa fa-cube"></i> Catalog</h2>
+
+<h3>Virtual Catalog list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /catalog/virtual/</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /catalog/virtual/{catalogCode}</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Category list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /catalog/virtual/{catalogCode}/category/</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Category details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Product Marketing list</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Virtual Catalog - Product Marketing details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/{productCode}</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Cart/Checkout</h2>
+<h3>Cart - details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/</li>
+	<li>method: GET</li>
+	<li>is not secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Cart - add item to cart</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/items/</li>
+	<li>method: POST</li>
+	<li>is not secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Cart - update item to cart</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/items/</li>
+	<li>method: PUT</li>
+	<li>is not secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Cart - update item to cart</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/items/</li>
+	<li>method: DELETE</li>
+	<li>is not secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set promocode (TODO)</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/promocode/</li>
+	<li>method: POST</li>
+	<li>is not secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set the shipping address</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/shipping-address/</li>
+	<li>method: POST</li>
+	<li>is secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set the billing address</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/billing-address/</li>
+	<li>method: POST</li>
+	<li>is secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h3>Cart - set the delivery method</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>path: /cart/delivery-method/</li>
+	<li>method: POST</li>
+	<li>is secured</li>
+	<li>Consumes: TODO</li>
+	<li>Produces: TODO</li>
+</ul>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Retailer</h2>
+<h3>Retailer</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li><a href="http://remote-rest.demo.qalingo.com/rest/retailer/" target="_blank">http://remote-rest.demo.qalingo.com/rest/retailer/</a></li>
+</ul>
+
+<hr>
+
+<h2><i class="fa fa-cube"></i> Store</h2>
+<h3>Store</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li><a href="http://remote-rest.demo.qalingo.com/rest/store/" target="_blank">http://remote-rest.demo.qalingo.com/rest/store/</a></li>
+</ul>
 
 <hr>
 
 <h2><i class="fa fa-cube"></i> CMS</h2>
 <h3>CMS Backoffice</h3>
+<p>This part is used to get datas for the CMS. CMS need to datas like marketArea, Localization, Catalog, Products, etc.</p>
 
 <ul style="padding-left: 50px;" class="icons">
 	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/marketplaces" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/marketplaces</a></li>
@@ -29,38 +255,6 @@ group: navigation
 	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/localization/set/MARKETAREA_CODE_VALUE/RETAILER_CODE_VALUE/LOCALIZATION_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/localization/set/MARKETAREA_CODE_VALUE/RETAILER_CODE_VALUE/LOCALIZATION_CODE_VALUE</a></li>
 	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/catalog/categories/MARKETAREA_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/catalog/categories/MARKETAREA_CODE_VALUE</a></li>
 	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/catalog/products/MARKETAREA_CODE_VALUE/CATEGORY_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/catalog/products/MARKETAREA_CODE_VALUE/CATEGORY_CODE_VALUE</a></li>
-</ul>
-
-<hr>
-
-<h2><i class="fa fa-cube"></i> Customer</h2>
-<h3>Customer backoffice</h3>
-<ul style="padding-left: 50px;" class="icons">
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/customer/" target="_blank">http://remote-rest.demo.qalingo.com/rest/customer/</a></li>
-</ul>
-
-<hr>
-
-<h2><i class="fa fa-cube"></i> Catalog</h2>
-<h3>Catalog backoffice</h3>
-<ul style="padding-left: 50px;" class="icons">
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/catalog/" target="_blank">http://remote-rest.demo.qalingo.com/rest/catalog/</a></li>
-</ul>
-
-<hr>
-
-<h2><i class="fa fa-cube"></i> Retailer</h2>
-<h3>Retailer backoffice</h3>
-<ul style="padding-left: 50px;" class="icons">
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/retailer/" target="_blank">http://remote-rest.demo.qalingo.com/rest/retailer/</a></li>
-</ul>
-
-<hr>
-
-<h2><i class="fa fa-cube"></i> Store</h2>
-<h3>Store backoffice</h3>
-<ul style="padding-left: 50px;" class="icons">
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/store/" target="_blank">http://remote-rest.demo.qalingo.com/rest/store/</a></li>
 </ul>
 
 						</div>
