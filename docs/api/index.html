@@ -20,34 +20,34 @@ group: navigation
 <hr>
 
 <h2><i class="fa fa-cube"></i> Customer</h2>
-<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/CustomerRestService.java" target="_blank">CustomerRestService.java</a></p>
 
 <h3>Customer private informations</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /customer/account</li>
-	<li>method: GET</li>
+	<li>Path: /customer/account</li>
+	<li>Method: GET</li>
 	<li>is secured</li>
 	<li>Produces: CustomerPojoResponse</li>
 </ul>
       
 <h3>Customer public informations</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /customer/permalink/{permalink}</li>
-	<li>method: GET</li>
+	<li>Path: /customer/permalink/{permalink}</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Produces: CustomerPojoResponse</li>
 </ul>
     
 <h3>Customer create</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /customer/</li>
-	<li>method: POST</li>
+	<li>Path: /customer/</li>
+	<li>Method: POST</li>
 	<li>is not secured</li>
 	<li>Consumes: CustomerPojo</li>
 	<li>
 		<pre>
 		{
-			"login": "xxxx",
+    		"login": "xxxx",
     		"title": "xxxx",
     		"firstname": "xxxx",
     		"lastname": "xxxx",
@@ -63,21 +63,21 @@ group: navigation
 
 <h3>Customer update</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /customer/account</li>
-	<li>method: PUT</li>
+	<li>Path: /customer/account</li>
+	<li>Method: PUT</li>
 	<li>is secured</li>
 	<li>Consumes: CustomerPojo</li>
 	<li>
 		<pre>
 		{
-			"login": "xxxx",
+    		"login": "xxxx",
     		"title": "xxxx",
     		"firstname": "xxxx",
     		"lastname": "xxxx",
     		"email": "xxxx",
     		"password": "xxxx",
     		"defaultLocale": "xxxx",
-    		"guest": "xxxx"
+    		"guest": false
 		}
 		</pre>
 	</li>
@@ -86,16 +86,16 @@ group: navigation
 
 <h3>Customer wishlist - product list</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /customer/wishlist</li>
-	<li>method: GET</li>
+	<li>Path: /customer/wishlist</li>
+	<li>Method: GET</li>
 	<li>is secured</li>
 	<li>Produces: WishlistPojoResponse</li>
 </ul>
 
 <h3>Customer add to wishlist</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /customer/wishlist</li>
-	<li>method: PUT</li>
+	<li>Path: /customer/wishlist</li>
+	<li>Method: PUT</li>
 	<li>is secured</li>
 	<li>Consumes: WishlistPojoRequest</li>
 	<li>
@@ -113,12 +113,12 @@ group: navigation
 <hr>
 
 <h2><i class="fa fa-cube"></i> Catalog</h2>
-<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/CatalogRestService.java" target="_blank">CatalogRestService.java</a></p>
 
 <h3>Virtual Catalog list</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /catalog/virtual/</li>
-	<li>method: GET</li>
+	<li>Path: /catalog/virtual/</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Produces: CatalogListPojoResponse</li>
 </ul>
@@ -127,8 +127,8 @@ group: navigation
 
 <h3>Virtual Catalog details</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /catalog/virtual/{catalogCode}</li>
-	<li>method: GET</li>
+	<li>Path: /catalog/virtual/{catalogCode}</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Produces: CatalogPojoResponse</li>
 </ul>
@@ -137,8 +137,8 @@ group: navigation
 
 <h3>Virtual Catalog - Category list</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /catalog/virtual/{catalogCode}/category/</li>
-	<li>method: GET</li>
+	<li>Path: /catalog/virtual/{catalogCode}/category/</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Produces: CategoryListPojoResponse</li>
 </ul>
@@ -147,8 +147,8 @@ group: navigation
 
 <h3>Virtual Catalog - Category details</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/</li>
-	<li>method: GET</li>
+	<li>Path: /catalog/virtual/{catalogCode}/category/{categoryCode}/</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Produces: CategoryPojoResponse</li>
 </ul>
@@ -157,8 +157,8 @@ group: navigation
 
 <h3>Virtual Catalog - Product Marketing list</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/</li>
-	<li>method: GET</li>
+	<li>Path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Produces: ProductListPojoResponse</li>
 </ul>
@@ -167,8 +167,8 @@ group: navigation
 
 <h3>Virtual Catalog - Product Marketing details</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/{productCode}</li>
-	<li>method: GET</li>
+	<li>Path: /catalog/virtual/{catalogCode}/category/{categoryCode}/product/{productCode}</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Produces: ProductPojoResponse</li>
 </ul>
@@ -176,12 +176,12 @@ group: navigation
 <hr>
 
 <h2><i class="fa fa-cube"></i> Cart / Checkout</h2>
-<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/CartRestService.java" target="_blank">CartRestService.java</a></p>
 
 <h3>Cart - details</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/</li>
-	<li>method: GET</li>
+	<li>Path: /cart/</li>
+	<li>Method: GET</li>
 	<li>is not secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -199,8 +199,8 @@ group: navigation
 <h3>Cart - add item to cart</h3>
 <p>You need to call the "cart details" before, to get a cartId.</p>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/items/</li>
-	<li>method: POST</li>
+	<li>Path: /cart/items/</li>
+	<li>Method: POST</li>
 	<li>is not secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -221,8 +221,8 @@ group: navigation
 
 <h3>Cart - update item to cart</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/items/</li>
-	<li>method: PUT</li>
+	<li>Path: /cart/items/</li>
+	<li>Method: PUT</li>
 	<li>is not secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -241,8 +241,8 @@ group: navigation
 
 <h3>Cart - update item to cart</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/items/</li>
-	<li>method: DELETE</li>
+	<li>Path: /cart/items/</li>
+	<li>Method: DELETE</li>
 	<li>is not secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -260,8 +260,8 @@ group: navigation
 
 <h3>Cart - set promocode (TODO)</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/promocode/</li>
-	<li>method: POST</li>
+	<li>Path: /cart/promocode/</li>
+	<li>Method: POST</li>
 	<li>is not secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -279,8 +279,8 @@ group: navigation
 
 <h3>Cart - set the shipping address</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/shipping-address/</li>
-	<li>method: POST</li>
+	<li>Path: /cart/shipping-address/</li>
+	<li>Method: POST</li>
 	<li>is secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -298,8 +298,8 @@ group: navigation
 
 <h3>Cart - set the billing address</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/billing-address/</li>
-	<li>method: POST</li>
+	<li>Path: /cart/billing-address/</li>
+	<li>Method: POST</li>
 	<li>is secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -317,8 +317,8 @@ group: navigation
 
 <h3>Cart - set the delivery method</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li>path: /cart/delivery-method/</li>
-	<li>method: POST</li>
+	<li>Path: /cart/delivery-method/</li>
+	<li>Method: POST</li>
 	<li>is secured</li>
 	<li>Consumes:</li>
 	<li>
@@ -335,41 +335,51 @@ group: navigation
 <hr>
 
 <h2><i class="fa fa-cube"></i> Retailer</h2>
-<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/RetailerRestService.java" target="_blank">RetailerRestService.java</a></p>
 
-<h3>Retailer</h3>
+<h3>Retailer - list</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/retailer/" target="_blank">http://remote-rest.demo.qalingo.com/rest/retailer/</a></li>
+	<li>Path: /retailer/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: RetailerListPojoResponse</li>
+</ul>
+
+<hr>
+
+<h3>Retailer - details</h3>
+<ul style="padding-left: 50px;" class="icons">
+	<li>Path: /retailer/{code}</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: RetailerPojoResponse</li>
 </ul>
 
 <hr>
 
 <h2><i class="fa fa-cube"></i> Store</h2>
-<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
+<p>Source code <a href="https://github.com/qalingo/qalingo-engine/blob/master/apis/api-core/api-core-jax-rs-fo/src/main/java/org/hoteia/qalingo/core/rest/controller/StoreRestService.java" target="_blank">StoreRestService.java</a></p>
 
-<h3>Store</h3>
+<h3>Store - list</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/store/" target="_blank">http://remote-rest.demo.qalingo.com/rest/store/</a></li>
+	<li>Path: /store/</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: StoreListPojoResponse</li>
 </ul>
 
 <hr>
 
-<h2><i class="fa fa-cube"></i> CMS</h2>
-<p>Source code <a href="xxxx" target="_blank">xxxx</a></p>
-
-<h3>CMS Backoffice</h3>
-<p>This part is used to get datas for the CMS. CMS need to datas like marketArea, Localization, Catalog, Products, etc.</p>
-
+<h3>Store - details</h3>
 <ul style="padding-left: 50px;" class="icons">
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/marketplaces" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/marketplaces</a></li>
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/marketplace/set/MARKETPLACE_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/marketplace/set/MARKETPLACE_CODE_VALUE</a></li>
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/market/set/MARKET_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/market/set/MARKET_CODE_VALUE</a></li>
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/marketarea/set/MARKETAREA_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/marketarea/set/MARKETAREA_CODE_VALUE</a></li>
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/retailer/set/MARKETAREA_CODE_VALUE/RETAILER_CODE_VALUE/LOCALIZATION_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/retailer/set/MARKETAREA_CODE_VALUE/RETAILER_CODE_VALUE/LOCALIZATION_CODE_VALUE</a></li>
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/localization/set/MARKETAREA_CODE_VALUE/RETAILER_CODE_VALUE/LOCALIZATION_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/localization/set/MARKETAREA_CODE_VALUE/RETAILER_CODE_VALUE/LOCALIZATION_CODE_VALUE</a></li>
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/catalog/categories/MARKETAREA_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/catalog/categories/MARKETAREA_CODE_VALUE</a></li>
-	<li><a href="http://remote-rest.demo.qalingo.com/rest/cms/catalog/products/MARKETAREA_CODE_VALUE/CATEGORY_CODE_VALUE" target="_blank">http://remote-rest.demo.qalingo.com/rest/cms/catalog/products/MARKETAREA_CODE_VALUE/CATEGORY_CODE_VALUE</a></li>
+	<li>Path: /store/{code}</li>
+	<li>Method: GET</li>
+	<li>is not secured</li>
+	<li>Produces: StorePojoResponse</li>
 </ul>
+
+<hr>
+
 
 						</div>
 
