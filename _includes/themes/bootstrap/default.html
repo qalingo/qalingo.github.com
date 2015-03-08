@@ -4,10 +4,25 @@
     <meta charset="utf-8">
 
     <title>{{ page.title }}</title>
+    
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta http-equiv="X-UA-Compatible"  content="chrome=1">
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Qalingo: Open Source Java eCommerce cross-channel">
+    <meta property="og:image"       content="http://www.qalingo.com/img/twitter-qalingo-ico.png">
+    <meta property="og:url"         content="http://www.qalingo.org">
+    <meta property="og:description"     content="Qalingo: Open Source Java eCommerce cross-channel">
+    <meta property="og:site_name"       content="Qalingo: Open Source Java eCommerce cross-channel">
+
+    <meta name="twitter:card " content="summary">
+    <meta name="twitter:site" content="@qalingo">
+    <meta name="twitter:creator" content="@qalingo">
+        
     <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
     <!--[if lt IE 9]>
