@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+    <head>
+	    <meta charset="utf-8">
+	
+	    <title>{{ page.title }}</title>
+	    
+	    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"> 
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	        
+	    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+	    <meta name="author" content="{{ site.author.name }}">
+	
+	    <meta http-equiv="X-UA-Compatible"  content="chrome=1">
+	    <meta property="og:type"        content="website">
+	    <meta property="og:title"       content="Qalingo: Open Source Java eCommerce cross-channel">
+	    <meta property="og:image"       content="http://www.qalingo.com/img/twitter-qalingo-ico.png">
+	    <meta property="og:url"         content="http://www.qalingo.org">
+	    <meta property="og:description"     content="Qalingo: Open Source Java eCommerce cross-channel">
+	    <meta property="og:site_name"       content="Qalingo: Open Source Java eCommerce cross-channel">
 
-    <title>{{ page.title }}</title>
-    
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+         <meta name="twitter:card " content="summary_large_image">
+         -->        
+        <meta name="twitter:card " content="summary">
+        <meta name="twitter:site" content="@qalingo">
+        <meta name="twitter:creator" content="@qalingo">
+        <meta name="twitter:title" content="Qalingo: Open Source Java eCommerce cross-channel by Hoteia">
+        <meta name="twitter:description" content="Qalingo: Open Source Java eCommerce cross-channel by Hoteia">
+        <meta name="twitter:image:src" content="http://www.qalingo.com/img/twitter-qalingo-ico.png">
         
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+	    <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  
+	    <!--[if lt IE 9]>
+	      <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
+	    <![endif]-->
+	
+	    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+	    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-    <meta http-equiv="X-UA-Compatible"  content="chrome=1">
-    <meta property="og:type"        content="website">
-    <meta property="og:title"       content="Qalingo: Open Source Java eCommerce cross-channel">
-    <meta property="og:image"       content="http://www.qalingo.com/img/twitter-qalingo-ico.png">
-    <meta property="og:url"         content="http://www.qalingo.org">
-    <meta property="og:description"     content="Qalingo: Open Source Java eCommerce cross-channel">
-    <meta property="og:site_name"       content="Qalingo: Open Source Java eCommerce cross-channel">
+    </head>
 
-    <meta name="twitter:card " content="summary">
-    <meta name="twitter:site" content="@qalingo">
-    <meta name="twitter:creator" content="@qalingo">
-        
-    <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
-    <!--[if lt IE 9]>
-      <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
-    <![endif]-->
-
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  </head>
-
-  <body>
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        </div>
-
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container">
-      {{ content }}
-      <hr>
-      <footer>
-        <p>
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          <span class="pull-right text-muted">
-            powered by
-            <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
-            and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap 3.0.3</a>
-          </span>
-        </p>
-      </footer>
-    </div>
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', '{{ site.default.ga_account}}', '{{ site.default.ga_domain}}');
-		ga('send', 'pageview');
-	</script>
-		
-    <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+    <body>
+	    <nav class="navbar navbar-default" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+	        </div>
+	
+	        <div class="collapse navbar-collapse navbar-ex1-collapse">
+	          <ul class="nav navbar-nav">
+	            {% assign pages_list = site.pages %}
+	            {% assign group = 'navigation' %}
+	            {% include JB/pages_list %}
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+	    <div class="container">
+	      {{ content }}
+	      <hr>
+	      <footer>
+	        <p>
+	          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+	          <span class="pull-right text-muted">
+	            powered by
+	            <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
+	            and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap 3.0.3</a>
+	          </span>
+	        </p>
+	      </footer>
+	    </div>
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+			ga('create', '{{ site.default.ga_account}}', '{{ site.default.ga_domain}}');
+			ga('send', 'pageview');
+		</script>
+			
+	    <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
+	    <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
